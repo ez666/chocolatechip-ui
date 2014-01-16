@@ -10,29 +10,12 @@ Please visit [ChocolateChip-UI's Website](http://chocolatechip-ui.com) for docum
 
 ##Building 
 
-ChocolateChip-UI uses Gruntjs to build. This is a Node package, so you'll first need to have [Node installed](http://http://nodejs.org). After installing Nodejs, or if you already have it installed, on Mac OS X use the terminal to cd to the directory. On Windows you can use the Windows command prompt to do this. Once you are in the folder, run the following command in your terminal: 
-    npm install -g grunt-cli
-
-On Mac OS X, you'll need to run the command with **sudo** to avoid installation errors: 
+ChocolateChip-UI uses Gruntjs to build. This is a Node package, so you'll first need to have [Node installed](http://http://nodejs.org). After installing Nodejs, or if you already have it installed, on Mac OS X use the terminal to cd to the directory. On Windows you can use the Windows command prompt to do this. Once you are in the folder, run the following commands in your terminal: 
 
     sudo npm install -g grunt-cli
+    npm install
+    grunt
 
-Enter your password when it requests. After you should see a number of Nodejs modules being installed in a folder called **node\_modules**. You do not need **node\_modules** in your final project. The node modules are there to enable the build process with Gruntjs.
-
-Now that you have the node modules install, you can just type `grunt` in the terminal and hit return/enter. This will kick off the build process, which will produce the following directories:
-
-
-    chui/
-    data/
-    demo/
-    examples-android/
-    examples-ios/
-    examples-win/
-    images/
-    node_modules/
-
- 
- If you're starting a new project, you only need the files in the **chui** folder. If you want to create a custom build, then just run **npm install**, then any of the custom build patterns listed below.
 
 By default the grunt script builds everything into the same directory as the repository. You can change this so that it builds to a project directory of your choice. Just update the value of projectPath in the package.json file. By default, the value is empty, so it builds into the same directory.  Possible values on a Mac are, assuming your username is 'joe':
 
