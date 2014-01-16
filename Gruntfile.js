@@ -71,7 +71,6 @@ module.exports = function(grunt) {
           'src/chui/slideout.js', 
           'src/chui/stepper.js', 
           'src/chui/switch.js', 
-          'src/chui/scroll.js', 
           'src/chui/tabbar.js', 
           'src/chui/templates.js'
         ],
